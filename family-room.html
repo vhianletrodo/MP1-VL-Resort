@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Family Room | VL Resort</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico">
+
+
+</head>
+<body>
+     <!--header-->
+     <header id="header">
+      <div class="wrap p-2">
+          <div class="container">
+              <div class="table-layout">
+                  <div class="table-item links">
+                      <ul>
+                          <li>
+                              <button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-modal">
+                                <i class="fas fa-magnifying-glass"></i>
+                              </button>
+                          </li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="table-item social-phone text-end">
+                      <span>Call Now! <a href="tel:000000"><i class="fa fa-phone"></i>+639-123-456-789</a></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- mobile menu -->
+    <div class="mobile-navigation navbar navbar-expand-lg navbar-light">
+      <div class="menu-wrap">
+
+      
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">
+                  Our Rooms
+                </a>
+                <a href="#" class="nav-link dropdown-toggle dropdown-link" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="standard-room.html">Standard Room</a></li>
+                  <li><a class="dropdown-item" href="deluxe-room.html">Deluxe Room</a></li>
+                  <li><a class="dropdown-item" href="superior-room.html">Superior Room</a></li>
+                  <li><a class="dropdown-item" href="family-room.html">Family Room</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+
+      <div class="container py-3">        
+          <div class="table-layout">
+              <div class="table-item header-logo">
+                  <a href="index.html"><img src="images/logo.png" alt="VL Resort Logo"></a>
+              </div>
+              <div class="table-item navigation text-end">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="rooms.html">Our Rooms <i class="fa fa-angle-down"></i></a>
+                              <ul>
+                                  <li><a href="standard-room.html">Standard Room</a></li>
+                                  <li><a href="deluxe-room.html">Deluxe Room</a></li>
+                                  <li><a href="superior-room.html">Superior Room</a></li>
+                                  <li><a href="family-room.html">Family Room</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="table-item book-now text-end">
+               <a href="#login-modal" data-bs-toggle="modal" role="button" class="btn fa-beat">Book Now!</a>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+
+  <div class="model-group">
+
+
+    <!-- modal search -->
+    <div class="modal fade" id="search-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-info" type="submit">Search</button>
+            </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+   <!-- modal login -->
+   <div class="modal fade" id="login-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Login </h3>
+      <h6 class="text-center mb-3">Please login your account first to fill up the booking form </h6>
+      <form class="needs-validation" action="booking-form.html">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="username" autocomplete="off" placeholder="Username*" required>
+          <div class="invalid-feedback">
+            Please provide a username.
+          </div>
+        </div>
+        <div class="mb-1">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-3">
+          <a href="#forgot-modal" data-bs-toggle="modal" role="button">Forgot password?</a> Not a Member <a href="#signup-modal" data-bs-toggle="modal" role="button">Signup now</a>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-info" id="submit" value="Submit">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal signup -->
+    <div class="modal fade" id="signup-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Registration Form</h3>
+      <form class="needs-validation" action="booking-form.html">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Name*" required>
+          <div class="invalid-feedback">
+            Please provide a name.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Email*" required>
+          <div class="invalid-feedback">
+            Please provide a email.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="username" autocomplete="off" placeholder="Username*" required>
+          <div class="invalid-feedback">
+            Please provide a username.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-1">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Confirm Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-3">
+          By creating an account you agree to our <a href="#">Terms & Privacy</a>.
+        </div>
+          <a href="#login-modal" class="btn btn-info" data-bs-toggle="modal" role="button">Register</a>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal Forgot password -->
+    <div class="modal fade" id="forgot-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Forgot Password</h3>
+      <form class="needs-validation" action="#">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Email*" required>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-info" id="submit" value="Submit"> 
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  </div>
+
+
+    <!--breadcrumb-->
+    <section id="breadcrumb" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="rooms.html">Rooms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Family Room</li>
+                      </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--content-->
+    <section id="room" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h5 class="mini-title text-uppercase">Spacious Comfort for Family Adventures</h5>
+                    <h1>Family Room</h1>
+                    <p>Our Family Rooms are thoughtfully designed to provide families with the perfect combination of space, comfort, and convenience. Whether you're embarking on a fun-filled family vacation or seeking a relaxing getaway with loved ones, these rooms are tailored to accommodate everyone, ensuring a memorable and enjoyable stay.</p>
+                    <p>In our Family Rooms, you'll find ample space, providing a separate sitting area for relaxation and bonding time. The comfortable bedding arrangements cater to both parents and children, making these rooms an ideal choice for family adventures. With modern amenities and a cozy ambiance, our Family Rooms create the perfect setting for quality time together.</p>
+                    <p>Our Family Rooms offer the space and amenities you need for a harmonious family getaway, ensuring that every member of your family can cherish the experience at VL Resort.</p>
+                </div>
+                <div class="col-lg-5">
+                    
+    
+                    <!-- Carousel -->
+                    <div id="room-carousel" class="carousel slide" data-bs-ride="carousel">
+    
+                    <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/carousel/fam1.jpg" alt="family room 1" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/carousel/fam2.jpg" alt="family room 2" class="d-block" style="width:100%"> 
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/carousel/fam3.jpg" alt="family room 3" class="d-block" style="width:100%"> 
+                        </div>
+                      </div>
+                      
+                    <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#room-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#room-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="ammenity">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-4 text-center rates">Rates from <span>Php16,000.00</span> per night</div>
+                    <div class="mb-3 text-center deposit"><span>50% Deposit Required</span></div>
+                    <div class="mb-4 text-center"><i>1 night minimum stay</i></div> 
+                    <div class="wrap p-4 rounded">
+                        <h3>Features</h3>
+                        <ul class="ammenity-list">
+                            <li>Room Measures about 35 sqm</li>
+                            <li>Private Veranda with Scenic Views</li>
+                            <li>Kitchenette</li>
+                        </ul>
+                        <h3>Amenities</h3>
+                        <ul class="ammenity-list">
+                            <li>Air Conditioned Room</li>
+                            <li>Hot/Cold Shower</li>
+                            <li>Safety Box</li>
+                            <li>Hair Dyer</li>
+                            <li>Wifi</li>
+                            <li>Bath Amenities</li>
+                            <li>Desk with Lamp</li>
+                            <li>Telephone</li>
+                            <li>Fridge</li>
+                            <li>Smart Television with Netflix</li>
+                        </ul>   
+                        <h3>Thoughtful Touches</h3>
+                        <ul class="ammenity-list">
+                            <li>Coffee and Tea making facilities</li>
+                            <li>Bedroom slippers</li>
+                            <li>Room Service</li>    
+                        </ul>    
+                        <b>Maximum Occupancy with Charges:</b> 10 Adults or 8 Adults and 2 Children (0-5 years of age)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ammenity" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="wrap p-4 rounded">
+              <h3>Fees &amp; Policies</h3>
+              <h5>Refundable Deposits</h5>
+              <ul class="ammenity-list" style="column-count: 1;">
+                <li><b>Deposit</b> is payable by bank transfer and is due within 72 hours of booking the reservation</li>
+              </ul>
+
+              <h5>Optional Extras</h5>
+              <ul class="ammenity-list" style="column-count: 1;">
+                <li><b>Local Cuisine Breakfast</b> is offered for an extra charge of approximately PHP 150 for adults and PHP 150 for children</li>
+                <li><b>Airport Shuttle Service</b> is offered for an extra charge of PHP 900 per person (one-way)</li>
+                <li><b>Early check-in</b> can be arranged for an extra charge (subject to availability)</li>
+                <li><b>Housekeeping</b> is offered for an extra charge</li>
+              </ul>
+
+              <h5>Pets</h5>
+              <ul class="ammenity-list" style="column-count: 1;">
+                <li>Pets are allowed for an extra charge of PHP 500 per accommodation (may vary based on length of stay)</li>
+              </ul>
+                  
+
+              <h5>Hygiene &amp; Cleanliness</h5>
+              <ul class="ammenity-list" style="column-count: 1;">
+                <li>This property advises that enhanced cleaning and guest safety measures are currently in place.</li> 
+                <li>Disinfectant is used to clean the property.</li>
+                <li>Social distancing measures are in place; staff at the property wear personal protective equipment; guests are provided with hand sanitizer.</li>
+                <li>Contactless check-out is available.</li>
+                <li>Individually-wrapped food options are available for breakfast, lunch, and dinner, and also through room service.</li>
+                <li>Each guestroom is kept vacant for a minimum of 72 hours between bookings.</li>
+              </ul>
+
+
+              <h5>Policies</h5>
+              <ul class="ammenity-list" style="column-count: 1;">
+                <li>Noise-free guestrooms cannot be guaranteed.</li>
+                <li>Only registered guests are allowed in the guestrooms.</li>
+                <li>Guests can rest easy knowing there's a fire extinguisher, a smoke detector, a security system, and a first aid kit on site.</li>
+                <li>The name on the credit card used at check-in to pay for incidentals must be the primary name on the guestroom reservation.</li>
+                <li>This property accepts credit cards, debit cards and cash.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+       
+    <section id="room" class="py-5 invert">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3 class="undrline">Unforgettable Family Getaways</h3>
+                    <p>When you choose to stay at our resort with our Family Rooms, you're making the choice to create cherished family memories. These rooms are designed with families in mind, ensuring that your time together is comfortable, enjoyable, and truly unforgettable.</p>
+                    <p>Our Family Rooms offer the ideal space for families to spread out and relax. With a separate sitting area, comfortable bedding arrangements for parents and children, and a welcoming ambiance, these rooms provide the perfect backdrop for quality family time.</p>
+                    <p>Staying in our Family Rooms is not just about accommodation; it's about the experience. It's about the laughter, the bonding, and the moments that you'll treasure forever. Choose our resort for your family getaway and create the kind of memories that will be talked about for years to come.</p>
+                    
+                </div>
+                <div class="col-lg-5">
+                    <img src="images/fmly4.jpg" alt="Unforgettable Family Getaways">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="related-room" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="undrline">Related Rooms</h3>
+                </div>
+                <div class="col-lg-4">
+                    <a href="standard-room.html"><img src="images/std.jpg" alt="standard room" class="my-3"></a>
+                    <h4>Standard Room</h4>  
+                    <p>Our Standard Rooms are cozy retreats designed for simplicity and comfort. These thoughtfully appointed spaces offer the essentials for a peaceful and enjoyable stay, making them perfect for solo travelers and couples.</p>    
+                    <div class="view-more">
+                        <a href="standard-room.html">View More <i class="fa fa-angle-right"></i></a>
+                    </div>     
+                </div>
+                <div class="col-lg-4">
+                  <a href="deluxe-room.html"><img src="images/deluxe.jpg" alt="deluxe room" class="my-3"></a>
+                    <h4 class="undrline">Deluxe Room</h4>  
+                    <p>Indulge in the epitome of luxury in our Deluxe Rooms. These spacious and elegantly designed retreats offer a blend of modern comfort and sophistication, ensuring that your stay is extraordinary.</p>    
+                    <div class="view-more">
+                        <a href="deluxe-room.html">View More <i class="fa fa-angle-right"></i></a>
+                    </div>     
+                </div>
+                 <div class="col-lg-4">
+                  <a href="superior-room.html"><img src="images/superior.jpg" alt="superior room" class="my-3"></a>
+                    <h4 class="undrline">Superior Room</h4>  
+                    <p>Experience the next level of comfort in our Superior Rooms. These well-appointed spaces offer a touch of luxury and modern amenities, making them ideal for travelers seeking an enhanced stay.</p> 
+                    <div class="view-more">
+                        <a href="superior-room.html">View More <i class="fa fa-angle-right"></i></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--faq-->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="undrline">Common Questions From Our Guests</h3>
+                    <div class="accordion" id="accordion-room-faq">
+                      <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How many guests can the Family Rooms accommodate?
+                          </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-room-faq">
+                          <div class="accordion-body">
+                            Our Family Rooms are designed to comfortably accommodate 10 guests, including both adults and children. The room layout provides a separate sitting area for family bonding and relaxation.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Are cribs or extra beds available for infants or additional family members?
+                          </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-room-faq">
+                          <div class="accordion-body">
+                            Yes, we offer the option of adding extra beds or cribs to our Family Rooms to accommodate infants or additional family members. Please let us know your requirements when making your reservation.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Are there child-friendly amenities or activities available for families staying in the Family Rooms?
+                          </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-room-faq">
+                          <div class="accordion-body">
+                            Absolutely! We offer a range of child-friendly amenities and activities to ensure that families have a memorable stay.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--cta-->
+    <section id="cta" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3 class="m-0 fw-bold">Contact Us we will be Happy to Help You</h3>   
+                </div>
+                <div class="col-lg-3">
+                    <div class="cta-btn">
+                        <a href="contact.html" class="btn fw-bold fa-beat">Contact Us Today!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--footer-->
+     <footer id="footer" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                        <div class="footer-top-a" >
+                            <h5>Main Contacts:</h5>
+                            <ul>
+                                <li>San Mateo Rizal</li>
+                                <li>vlresort@gmail.com</li>
+                                <li>+639-123-456-789</li>
+                                <li>Reception 24 H</li>
+                            </ul>                          
+                        </div>            
+                </div>
+                <div class="col-md-6 col-lg-2">
+                        <div class="footer-top-b">
+                                <h5>Site Links:</h5>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="rooms.html">OUR ROOMS</a></li>
+                                <li><a href="reviews.html">REVIEWS</a></li>
+                                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>   
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="iframe-wrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.416817600294!2d121.12701555283144!3d14.68583587805831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bbecc0d9104d%3A0xd706e6331d779da6!2s32%20Phase%209%20Bankers%20Village!5e0!3m2!1sen!2sph!4v1698331758295!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                        <div class="footer-top-c">
+                                <div class="row">
+                                    <h5>News Letter:</h5>  
+                                <div class="field">  
+                                    <input type="email"  name="email" placeholder="Insert your email">
+                                    <button type="button" class="btn fw-bold mx-1">SUBSCRIBE</button>
+                                </div>    
+                                </div>
+                            <div class="row">
+                                <div class="mt-3">
+                                    <div class="footer-top">
+                                            <h5>Social:</h5>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"class="bg-light"></i></a></li>
+                                            <li><a href="https://www.viber.com/" target="_blank"><i class="fab fa-viber" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-x-twitter" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok" class="bg-light"></i></a></li>
+                                         </ul>
+                                    </div>
+                                </div>                   
+                            </div>
+                        </div>
+                </div>
+             </div>   
+        </div>        
+        <div id="footer-bottom" class="py-2 mt-3">     
+            <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">
+                                <div class="footer-bottom">
+                                <span> VL Resort</span>
+                                </div>
+                                </div>
+                   <div class="col-md-8">
+                       <div class="footer-bottom-a text-center">
+                       <span> © 2023 VL Resort. All Rights Reserved.</span>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="footer-bottom-b text-end">
+                           <ul class="mb-0">
+                               <li><i class="fab fa-cc-visa"></i></li>
+                               <li><i class="fab fa-cc-mastercard"></i></li>
+                               <li><i class="fab fa-cc-paypal"></i></li>                           
+                            </ul>                      
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>   
+    </footer> 
+</body>
+</html>

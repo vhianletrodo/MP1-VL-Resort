@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>About Us | VL Resort</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico">
+
+
+</head>
+<body>
+    <!--header-->
+    <header id="header">
+      <div class="wrap p-2">
+          <div class="container">
+              <div class="table-layout">
+                  <div class="table-item links">
+                      <ul>
+                          <li>
+                              <button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-modal">
+                                <i class="fas fa-magnifying-glass"></i>
+                              </button>
+                          </li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="table-item social-phone text-end">
+                      <span>Call Now! <a href="tel:000000"><i class="fa fa-phone"></i>+639-123-456-789</a></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- mobile menu -->
+    <div class="mobile-navigation navbar navbar-expand-lg navbar-light">
+      <div class="menu-wrap">
+
+      
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">
+                  Our Rooms
+                </a>
+                <a href="#" class="nav-link dropdown-toggle dropdown-link" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="standard-room.html">Standard Room</a></li>
+                  <li><a class="dropdown-item" href="deluxe-room.html">Deluxe Room</a></li>
+                  <li><a class="dropdown-item" href="superior-room.html">Superior Room</a></li>
+                  <li><a class="dropdown-item" href="family-room.html">Family Room</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+
+      <div class="container py-3">        
+          <div class="table-layout">
+              <div class="table-item header-logo">
+                  <a href="index.html"><img src="images/logo.png" alt="VL Logo"></a>
+              </div>
+              <div class="table-item navigation text-end">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="rooms.html">Our Rooms<i class="fa fa-angle-down"></i></a>
+                              <ul>
+                                  <li><a href="standard-room.html">Standard Room</a></li>
+                                  <li><a href="deluxe-room.html">Deluxe Room</a></li>
+                                  <li><a href="superior-room.html">Superior Room</a></li>
+                                  <li><a href="family-room.html">Family Room</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="table-item book-now text-end">
+               <a href="#login-modal" data-bs-toggle="modal" role="button" class="btn fa-beat">Book Now!</a>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+
+  <div class="model-group">
+
+
+    <!-- modal search -->
+   <div class="modal fade" id="search-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info" type="submit">Search</button>
+          </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+   <!-- modal login -->
+   <div class="modal fade" id="login-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Login </h3>
+      <h6 class="text-center mb-3">Please login your account first to fill up the booking form </h6>
+      <form class="needs-validation" action="booking-form.html">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="username" autocomplete="off" placeholder="Username*" required>
+          <div class="invalid-feedback">
+            Please provide a username.
+          </div>
+        </div>
+        <div class="mb-1">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-3">
+          <a href="#forgot-modal" data-bs-toggle="modal" role="button">Forgot password?</a> Not a Member <a href="#signup-modal" data-bs-toggle="modal" role="button">Signup now</a>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-info" id="submit" value="Submit">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal signup -->
+    <div class="modal fade" id="signup-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Registration Form</h3>
+      <form class="needs-validation" action="booking-form.html">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Name*" required>
+          <div class="invalid-feedback">
+            Please provide a name.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Email*" required>
+          <div class="invalid-feedback">
+            Please provide a email.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="username" autocomplete="off" placeholder="Username*" required>
+          <div class="invalid-feedback">
+            Please provide a username.
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-1">
+          <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Confirm Password*" required>
+          <div class="invalid-feedback">
+            Please provide a passwrd.
+          </div>
+        </div>
+        <div class="mb-3">
+          By creating an account you agree to our <a href="#">Terms & Privacy</a>.
+        </div>
+          <a href="#login-modal" class="btn btn-info" data-bs-toggle="modal" role="button">Register</a>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal Forgot password -->
+    <div class="modal fade" id="forgot-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <h3 class="text-center fw-bold mb-3">Forgot Password</h3>
+      <form class="needs-validation" action="#">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Email*" required>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-info" id="submit" value="Submit"> 
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  </div>
+
+    <!--about content-->
+    <section id="main-about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="abt-photo">
+                        <img src="images/banner1.jpg" alt="From the Start">
+                    </div>
+                </div>
+                <div class="col-lg-8 right">
+                    <div class="content">
+                        <h5 class="mini-title">Our History</h5>
+                        <h2 class="title">From the Start</h2>
+                        <p>Tucked away in the heart of our charming suburban subdivision, our hotel resort first opened its doors in 2013. This small yet cozy inn was built on the vision of providing a peaceful oasis for residents and travelers alike. From the very beginning, our warm and inviting atmosphere made us a favorite choice for those seeking a tranquil escape. As word of our hospitality spread, so did our reputation, leading to our expansion in 2023.</p>                       
+                        <p>With this expansion came additional rooms, a beautiful pool and spa area, and a restaurant that delighted guests with delectable cuisine. We quickly evolved into a cherished retreat, offering not only relaxation but also a sense of belonging to our close-knit community. Today, our resort stands as a testament to our commitment to creating memorable experiences for all who visit.</p>
+                        <p> Our rich history is a part of the tapestry of the subdivision itself, and we remain dedicated to preserving the values and charm that have defined us since our inception. As we look back on our journey, we eagerly await the opportunity to be a part of your future memories, continuing to offer comfort, relaxation, and a true sense of home within our beloved neighborhood.</p>            
+                        <ul class="ceo-list">
+                            <li>
+                                <div class="abt-ceo">
+                                    <img src="images/ceo-pic.jpg" class="rounded-circle" alt="ceo-pic">
+                                </div>
+                            </li>
+                            <li class="ceo-name h-100">
+                                <div>
+                                    <h5 class="m-0">Vivian Letrodo</h5>
+                                    <h6>CEO</h6>
+                                </div>                            
+                            </li>
+                        </ul>                                
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quad" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h5 class="mini-title">THE STEPS</h5>
+                    <h3>Our Commitment</h3>
+                </div>
+            </div>                  
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                        <div class="big-number">1</div>
+                        <h6>Exceptional Service</h6>
+                        <div class="content">
+                        <p>Hotel resort management prioritizes personalized, efficient, and warm service to create memorable guest experiences.</p>
+                        <ul class="check pl-20">
+                            <li>Personalized care for every guest.</li>
+                            <li>Prompt responses to requests.</li>
+                            <li>Warm and welcoming atmosphere.</li>
+                        </ul>
+                        </div>
+                </div>     
+                <div class="col-lg-3 col-md-6">
+                    <div class="big-number">2</div>
+                                <h6>Enviromental Stewardship</h6>
+                    <div class="content">
+                                <p>Stewardship
+                                    Our resort is committed to eco-friendly practices and conservation to preserve our pristine natural surroundings.</p>
+                                <ul class="check">
+                                    <li>Sustainable practices for eco-friendly stays.</li>
+                                    <li>Conservation initiatives to preserve natural surroundings.</li>
+                                    <li>Green certifications for responsible tourism.</li>
+                                </ul>
+                    </div>
+                </div>                   
+                <div class="col-md-6 col-lg-3">
+                    <div class="big-number">3</div>
+                                <h6>Community Engagement</h6>
+                        <div class="content">
+                            <p>We actively engage with our community, supporting local events and initiatives, fostering a sense of belonging.</p>
+                            <ul class="check">
+                                <li>Active participation in local events.</li>
+                                <li>Support for neighborhood initiatives.</li>
+                                <li>Fostering a sense of belonging among residents.</li>
+                            </ul>
+                       </div>
+                </div>    
+                <div class="col-md-6 col-lg-3">
+                    <div class="big-number">4</div>
+                    <h6>Continous Improvement</h6>
+                    <div class="content">
+                        <p>Continuous Improvement
+                        We continually enhance guest comfort through upgrades, staff training, and feedback-driven excellence, ensuring your satisfaction.</p>
+                        <ul class="check">
+                           <li>Regular upgrades for guest comfort.</li>
+                           <li>training for exceptional service.</li>
+                           <li>Feedback-driven approach for guest satisfaction.</li>
+                       </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>          
+    </section>
+    
+    
+    <section id="main-about" class="py-5 invert">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="abt-photo">
+                    <img src="images/wcu1.jpg" alt="Your Comfort, Our Priority">
+                </div>
+            </div>
+            <div class="col-lg-8 right">
+                <h5 class="mini-title text-uppercase">Your Comfort, Our Priority</h5>
+                <h2>Your Ultimate Resort Experience</h2>
+                <p>Discover a haven of tranquility and unmatched hospitality at VL Resort. What sets us apart is not just our picturesque location and luxurious accommodations, but our unwavering commitment to your complete satisfaction.</p>
+                <p>First and foremost, it's our dedicated team of professionals who make your experience truly exceptional. From the warm smiles that greet you upon arrival to the personalized attention throughout your stay, we prioritize your comfort and well-being. We go the extra mile to anticipate your needs, ensuring that every moment of your vacation is seamless and memorable.</p>
+                <p>At VL Resort, we don't just offer a place to stay; we provide an unforgettable escape where you can relax, rejuvenate, and create cherished memories with your loved ones. Choose us for an unparalleled retreat that lingers in your heart long after you've left our shores.</p>
+            <div class="row img-list mt-5">
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/abt1.jpg" alt="about image 1">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/abt2.jpg" alt="about image 2">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/abt3.jpg" alt="about image 3">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/abt4.jpg" alt="about image 4">
+                </div>
+            </div>           
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--cta-->
+   <section id="cta" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h3 class="m-0 fw-bold">Contact Us we will be Happy to Help You</h3>   
+            </div>
+            <div class="col-lg-3">
+                <div class="cta-btn">
+                    <a href="contact.html" class="btn fw-bold fa-beat">Contact Us Today!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <!--footer-->
+    <footer id="footer" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                        <div class="footer-top-a" >
+                            <h5>Main Contacts:</h5>
+                            <ul>
+                                <li>San Mateo Rizal</li>
+                                <li>vlresort@gmail.com</li>
+                                <li>+639-123-456-789</li>
+                                <li>Reception 24 H</li>
+                            </ul>                          
+                        </div>            
+                </div>
+                <div class="col-md-6 col-lg-2">
+                        <div class="footer-top-b">
+                                <h5>Site Links:</h5>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="rooms.html">OUR ROOMS</a></li>
+                                <li><a href="reviews.html">REVIEWS</a></li>
+                                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>   
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="iframe-wrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.416817600294!2d121.12701555283144!3d14.68583587805831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bbecc0d9104d%3A0xd706e6331d779da6!2s32%20Phase%209%20Bankers%20Village!5e0!3m2!1sen!2sph!4v1698331758295!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                        <div class="footer-top-c">
+                                <div class="row">
+                                    <h5>News Letter:</h5>  
+                                <div class="field">  
+                                    <input type="email"  name="email" placeholder="Insert your email">
+                                    <button type="button" class="btn fw-bold mx-1">SUBSCRIBE</button>
+                                </div>    
+                                </div>
+                            <div class="row">
+                                <div class="mt-3">
+                                    <div class="footer-top">
+                                            <h5>Social:</h5>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"class="bg-light"></i></a></li>
+                                            <li><a href="https://www.viber.com/" target="_blank"><i class="fab fa-viber" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-x-twitter" class="bg-light"></i></a></li>
+                                            <li><a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok" class="bg-light"></i></a></li>
+                                         </ul>
+                                    </div>
+                                </div>                   
+                            </div>
+                        </div>
+                </div>
+             </div>   
+        </div>        
+        <div id="footer-bottom" class="py-2 mt-3">     
+            <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">
+                                <div class="footer-bottom">
+                                <span> VL Resort</span>
+                                </div>
+                                </div>
+                   <div class="col-md-8">
+                       <div class="footer-bottom-a text-center">
+                       <span> © 2023 VL Resort. All Rights Reserved.</span>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="footer-bottom-b text-end">
+                           <ul class="mb-0">
+                               <li><i class="fab fa-cc-visa"></i></li>
+                               <li><i class="fab fa-cc-mastercard"></i></li>
+                               <li><i class="fab fa-cc-paypal"></i></li>                           
+                            </ul>                      
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
