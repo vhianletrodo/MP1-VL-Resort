@@ -947,7 +947,7 @@ a:hover img {
  
  }
  .booking-form{
-     background-image: url('images/bgbform.jpg');
+     background-image: url('../images/bgbform.jpg');
      width: 100%;
      background-size: cover;
      background-attachment: fixed;
