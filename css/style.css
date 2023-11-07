@@ -936,3 +936,65 @@ a img {
 a:hover img {
     opacity: 0.8
 }
+
+/*booking-form*/
+.booking-form form {
+    width:100%;
+    max-width: 600px;
+    background-color:rgb(255, 255, 255, .7);
+    padding: 20px;
+   
+ 
+ }
+ .booking-form{
+     background-image: url('images/bgbform.jpg');
+     width: 100%;
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     height:100%;  
+ }
+ .booking-form form img{
+     width: 60px;
+     border: 2px solid white;
+     border-radius: 5px;
+     
+ }
+ .booking-form form li{
+     list-style: none;
+     display: inline-block;  
+ }
+
+
+@media(min-width:992px) and (max-width:1199px){
+    .booking-form ul {display: flex;
+      padding-left: 0;
+    
+  }
+  }
+  
+  @media(min-width:992px) and (max-width:1199px){
+    .booking-form li {margin-right: 5px;
+    
+    
+  }
+  }
+  
+  @media(max-width:767px){
+    .booking-form ul{display: flex;
+      padding-left: 0;
+  }
+  }
+  
+  @media(max-width:767px){
+    .booking-form li{ margin-right:5px;
+  }
+  }
+
+  /*done-booking*/
+  .done-booking {
+    padding-top: 100px;
+    padding-bottom: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+   }
